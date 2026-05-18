@@ -1,14 +1,14 @@
 cask "nuage" do
+  name "Nuage"
   desc "A native SoundCloud app for macOS, written in SwiftUI"
   homepage "https://github.com/lbrndnr/nuage-macos"
   url "https://github.com/lbrndnr/nuage-macos/releases/download/v0.0.10/Nuage.app.zip"
   sha256 "ce7229d464f9fb5a1f5bab6b4d67495f8e77692be95c3d7813168faf3c9d1626"
-  
+  depends_on macos: :ventura
+
   livecheck do
     skip "Auto-generated on release."
   end
-
-  depends_on macos: :ventura
 
   app "Nuage.app"
 
