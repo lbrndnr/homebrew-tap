@@ -1,5 +1,6 @@
 cask "nuage" do
   name "Nuage"
+  version "0.0.10"
   desc "A native SoundCloud app for macOS, written in SwiftUI"
   homepage "https://github.com/lbrndnr/nuage-macos"
   url "https://github.com/lbrndnr/nuage-macos/releases/download/v0.0.10/Nuage.app.zip"
