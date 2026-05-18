@@ -1,0 +1,19 @@
+cask "nuage" do
+  desc "A native SoundCloud app for macOS, written in SwiftUI"
+  homepage "https://github.com/lbrndnr/nuage-macos"
+  url "https://github.com/lbrndnr/nuage-macos/releases/download/v.0.0.10/Nuage.app.zip"
+  sha256 "ce7229d464f9fb5a1f5bab6b4d67495f8e77692be95c3d7813168faf3c9d1626"
+  license "GPL-3.0"
+
+  depends_on macos: :ventura
+
+  app "Nuage.app"
+
+  zap trash: [
+    "~/Library/Application Support/CrashReporter/Nuage*.plist",
+    "~/Library/Caches/ch.laurinbrandner.nuage",
+    "~/Library/Containers/ch.laurinbrandner.nuage",
+    "~/Library/Logs/DiagnosticReports/Nuage*.crash",
+    "~/Library/Preferences/ch.laurinbrandner.nuage.plist",
+  ]
+end
